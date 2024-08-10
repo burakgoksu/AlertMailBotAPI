@@ -10,3 +10,12 @@
 2024-08-10 03:03:32,115 - AlertAvailableSessions - INFO - Available Sessions: []
 2024-08-10 03:03:32,115 - AlertAvailableSessions - WARNING - The new content is the same as the existing content. No file updates and e-mails did not sent.
 2024-08-10 03:03:32,115 - AlertAvailableSessions - INFO - Sent Sessions List was cleared
+2024-08-10 03:42:46,222 - AlertAvailableSessions - INFO - Web Driver was started
+2024-08-10 03:42:46,222 - AlertAvailableSessions - INFO - AlertAvailableSessions bot started
+2024-08-10 03:42:52,887 - AlertAvailableSessions - INFO - Login Successfully
+2024-08-10 03:42:53,851 - AlertAvailableSessions - INFO - Seans Secim Buton was Clicked
+2024-08-10 03:42:55,920 - AlertAvailableSessions - INFO - Pop-up was closed
+2024-08-10 03:42:57,941 - AlertAvailableSessions - INFO - Get Sessions Info
+2024-08-10 03:43:00,234 - AlertAvailableSessions - INFO - Available Sessions: []
+2024-08-10 03:43:00,234 - AlertAvailableSessions - WARNING - The new content is the same as the existing content. No file updates and e-mails did not sent.
+2024-08-10 03:43:00,234 - AlertAvailableSessions - INFO - Sent Sessions List was cleared
