@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+# Google Chrome kurulumu
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+sudo apt-get install -y ./google-chrome-stable_current_amd64.deb
+
+# ChromeDriver kurulumu
+wget https://chromedriver.storage.googleapis.com/$(curl -s https://chromedriver.storage.googleapis.com/LATEST_RELEASE)/chromedriver_linux64.zip
+unzip chromedriver_linux64.zip -d /usr/local/bin/
