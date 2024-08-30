@@ -29,6 +29,8 @@ class AlertAvailableSessions:
         self.chrome_option = Options()
         if headless:
             self.chrome_option.add_argument("--headless")
+        self.chrome_option.add_argument("--disable-dev-shm-usage")
+        self.chrome_option.add_argument("--no-sandbox")
         self.chrome_option.add_argument("user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0")
         self.link1 = link1
         self.link2 = link2
@@ -43,21 +45,35 @@ class AlertAvailableSessions:
         self._running = False
 
     def GetSessionInfo(self):
+
+        # Setup Chrome options
         chrome_options = Options()
-        chrome_options.binary_location = "/usr/bin/google-chrome"
         chrome_options.add_argument("--headless")
         chrome_options.add_argument("--no-sandbox")
         chrome_options.add_argument("--disable-dev-shm-usage")
-        #driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=chrome_options)
+        chrome_options.add_argument("--disable-gpu")  # This is important for some versions of Chrome
+        chrome_options.add_argument("--remote-debugging-port=9222")  # This is recommended
 
+        # Set path to Chrome binary
+        chrome_options.binary_location = "/opt/chrome/chrome-linux64/chrome"
+        #/opt/chrome/chrome-linux64/chrome
+        # Set path to ChromeDriver
+        chrome_service = Service(executable_path="/opt/chromedriver/chromedriver-linux64/chromedriver")
+
+        # Set up driver
         driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=chrome_options)
+
+        #driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=self.chrome_option)
         try:
             driver.get(self.link1)
-            tc_no = driver.find_element(By.ID, 'txtTCPasaport')
+
+            # Bekleme: Öğelerin yüklenmesini bekleyin
+            wait = WebDriverWait(driver, 10)
+            tc_no = wait.until(EC.presence_of_element_located((By.ID, 'txtTCPasaport')))
             tc_no.send_keys('53875003034')
-            password = driver.find_element(By.ID, 'txtSifre')
+            password = wait.until(EC.presence_of_element_located((By.ID, 'txtSifre')))
             password.send_keys('B1245789630g')
-            login_buton = driver.find_element(By.ID, 'btnGirisYap')
+            login_buton = wait.until(EC.element_to_be_clickable((By.ID, 'btnGirisYap')))
             login_buton.click()
             self.logger.info('Login Successfully')
         except Exception as e:
@@ -180,7 +196,7 @@ class AlertAvailableSessions:
         self._running = True
         while self._running:
             self.sessions()
-            time.sleep(300)
+            time.sleep(600)
 
 
     def stop(self):

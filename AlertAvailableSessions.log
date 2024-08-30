@@ -19,3 +19,148 @@
 2024-08-10 03:43:00,234 - AlertAvailableSessions - INFO - Available Sessions: []
 2024-08-10 03:43:00,234 - AlertAvailableSessions - WARNING - The new content is the same as the existing content. No file updates and e-mails did not sent.
 2024-08-10 03:43:00,234 - AlertAvailableSessions - INFO - Sent Sessions List was cleared
+2024-08-30 16:49:22,071 - AlertAvailableSessions - INFO - Web Driver was started
+2024-08-30 16:49:22,074 - AlertAvailableSessions - INFO - AlertAvailableSessions bot started
+2024-08-30 16:50:05,753 - AlertAvailableSessions - INFO - Web Driver was started
+2024-08-30 16:50:05,753 - AlertAvailableSessions - INFO - AlertAvailableSessions bot started
+2024-08-30 16:50:12,424 - AlertAvailableSessions - INFO - Login Successfully
+2024-08-30 16:50:12,815 - AlertAvailableSessions - INFO - Seans Secim Buton was Clicked
+2024-08-30 16:50:14,870 - AlertAvailableSessions - INFO - Pop-up was closed
+2024-08-30 16:50:16,897 - AlertAvailableSessions - INFO - Get Sessions Info
+2024-08-30 16:50:19,148 - AlertAvailableSessions - INFO - Available Sessions: []
+2024-08-30 16:50:19,148 - AlertAvailableSessions - WARNING - The new content is the same as the existing content. No file updates and e-mails did not sent.
+2024-08-30 16:50:19,149 - AlertAvailableSessions - INFO - Sent Sessions List was cleared
+2024-08-30 17:32:49,660 - AlertAvailableSessions - INFO - Web Driver was started
+2024-08-30 17:32:49,660 - AlertAvailableSessions - INFO - AlertAvailableSessions bot started
+2024-08-30 17:32:56,612 - AlertAvailableSessions - INFO - Login Successfully
+2024-08-30 17:32:56,996 - AlertAvailableSessions - INFO - Seans Secim Buton was Clicked
+2024-08-30 17:32:59,056 - AlertAvailableSessions - INFO - Pop-up was closed
+2024-08-30 17:33:01,080 - AlertAvailableSessions - INFO - Get Sessions Info
+2024-08-30 17:33:03,304 - AlertAvailableSessions - INFO - Available Sessions: []
+2024-08-30 17:33:03,305 - AlertAvailableSessions - WARNING - The new content is the same as the existing content. No file updates and e-mails did not sent.
+2024-08-30 17:33:03,305 - AlertAvailableSessions - INFO - Sent Sessions List was cleared
+2024-08-30 17:33:29,418 - AlertAvailableSessions - INFO - Web Driver was started
+2024-08-30 17:33:29,419 - AlertAvailableSessions - INFO - AlertAvailableSessions bot started
+2024-08-30 17:33:35,378 - AlertAvailableSessions - INFO - Login Successfully
+2024-08-30 17:33:35,735 - AlertAvailableSessions - INFO - Seans Secim Buton was Clicked
+2024-08-30 17:33:37,797 - AlertAvailableSessions - INFO - Pop-up was closed
+2024-08-30 17:34:19,977 - AlertAvailableSessions - INFO - Web Driver was started
+2024-08-30 17:34:19,978 - AlertAvailableSessions - INFO - AlertAvailableSessions bot started
+2024-08-30 17:34:25,291 - AlertAvailableSessions - ERROR - Login failed: Message: stale element reference: stale element not found
+  (Session info: chrome=128.0.6613.86); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Stacktrace:
+	GetHandleVerifier [0x00A08283+26163]
+	(No symbol) [0x00999D34]
+	(No symbol) [0x008924C3]
+	(No symbol) [0x008A0BA5]
+	(No symbol) [0x0089894F]
+	(No symbol) [0x00896C67]
+	(No symbol) [0x00899948]
+	(No symbol) [0x008999C0]
+	(No symbol) [0x008D7EED]
+	(No symbol) [0x008D7F71]
+	(No symbol) [0x008D00CE]
+	(No symbol) [0x008FACBC]
+	(No symbol) [0x008CD445]
+	(No symbol) [0x008FAF54]
+	(No symbol) [0x00914661]
+	(No symbol) [0x008FAA56]
+	(No symbol) [0x008CBE89]
+	(No symbol) [0x008CC8CD]
+	GetHandleVerifier [0x00CDCF73+2994979]
+	GetHandleVerifier [0x00D317E9+3341209]
+	GetHandleVerifier [0x00A97B5F+614159]
+	GetHandleVerifier [0x00A9F1EC+644508]
+	(No symbol) [0x009A286D]
+	(No symbol) [0x0099F768]
+	(No symbol) [0x0099F905]
+	(No symbol) [0x00991C86]
+	BaseThreadInitThunk [0x75D77BA9+25]
+	RtlInitializeExceptionChain [0x77D6C10B+107]
+	RtlClearBits [0x77D6C08F+191]
+
+2024-08-30 17:34:36,821 - AlertAvailableSessions - INFO - Web Driver was started
+2024-08-30 17:34:36,821 - AlertAvailableSessions - INFO - AlertAvailableSessions bot started
+2024-08-30 17:34:42,247 - AlertAvailableSessions - ERROR - Login failed: Message: stale element reference: stale element not found
+  (Session info: chrome=128.0.6613.86); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Stacktrace:
+	GetHandleVerifier [0x00A08283+26163]
+	(No symbol) [0x00999D34]
+	(No symbol) [0x008924C3]
+	(No symbol) [0x008A0BA5]
+	(No symbol) [0x0089894F]
+	(No symbol) [0x00896C67]
+	(No symbol) [0x00899948]
+	(No symbol) [0x008999C0]
+	(No symbol) [0x008D7EED]
+	(No symbol) [0x008D7F71]
+	(No symbol) [0x008D00CE]
+	(No symbol) [0x008FACBC]
+	(No symbol) [0x008CD445]
+	(No symbol) [0x008FAF54]
+	(No symbol) [0x00914661]
+	(No symbol) [0x008FAA56]
+	(No symbol) [0x008CBE89]
+	(No symbol) [0x008CC8CD]
+	GetHandleVerifier [0x00CDCF73+2994979]
+	GetHandleVerifier [0x00D317E9+3341209]
+	GetHandleVerifier [0x00A97B5F+614159]
+	GetHandleVerifier [0x00A9F1EC+644508]
+	(No symbol) [0x009A286D]
+	(No symbol) [0x0099F768]
+	(No symbol) [0x0099F905]
+	(No symbol) [0x00991C86]
+	BaseThreadInitThunk [0x75D77BA9+25]
+	RtlInitializeExceptionChain [0x77D6C10B+107]
+	RtlClearBits [0x77D6C08F+191]
+
+2024-08-30 17:36:08,325 - AlertAvailableSessions - INFO - Web Driver was started
+2024-08-30 17:36:08,325 - AlertAvailableSessions - INFO - AlertAvailableSessions bot started
+2024-08-30 17:36:14,656 - AlertAvailableSessions - INFO - Login Successfully
+2024-08-30 17:36:14,999 - AlertAvailableSessions - INFO - Seans Secim Buton was Clicked
+2024-08-30 17:36:17,060 - AlertAvailableSessions - INFO - Pop-up was closed
+2024-08-30 17:36:19,081 - AlertAvailableSessions - INFO - Get Sessions Info
+2024-08-30 17:36:21,353 - AlertAvailableSessions - INFO - Available Sessions: []
+2024-08-30 17:36:21,353 - AlertAvailableSessions - WARNING - The new content is the same as the existing content. No file updates and e-mails did not sent.
+2024-08-30 17:36:21,353 - AlertAvailableSessions - INFO - Sent Sessions List was cleared
+2024-08-30 17:41:13,625 - AlertAvailableSessions - INFO - Web Driver was started
+2024-08-30 17:41:13,626 - AlertAvailableSessions - INFO - AlertAvailableSessions bot started
+2024-08-30 17:41:19,780 - AlertAvailableSessions - INFO - Login Successfully
+2024-08-30 17:41:20,274 - AlertAvailableSessions - INFO - Seans Secim Buton was Clicked
+2024-08-30 17:41:22,338 - AlertAvailableSessions - INFO - Pop-up was closed
+2024-08-30 23:05:47,160 - AlertAvailableSessions - INFO - Web Driver was started
+2024-08-30 23:05:47,160 - AlertAvailableSessions - INFO - AlertAvailableSessions bot started
+2024-08-30 23:08:43,552 - AlertAvailableSessions - INFO - Web Driver was started
+2024-08-30 23:08:43,552 - AlertAvailableSessions - INFO - AlertAvailableSessions bot started
+2024-08-30 23:09:38,500 - AlertAvailableSessions - INFO - Web Driver was started
+2024-08-30 23:09:38,500 - AlertAvailableSessions - INFO - AlertAvailableSessions bot started
+2024-08-30 23:11:05,214 - AlertAvailableSessions - INFO - Web Driver was started
+2024-08-30 23:11:05,214 - AlertAvailableSessions - INFO - AlertAvailableSessions bot started
+2024-08-30 23:12:21,066 - AlertAvailableSessions - INFO - Web Driver was started
+2024-08-30 23:12:21,067 - AlertAvailableSessions - INFO - AlertAvailableSessions bot started
+2024-08-30 23:14:02,718 - AlertAvailableSessions - INFO - Web Driver was started
+2024-08-30 23:14:02,718 - AlertAvailableSessions - INFO - AlertAvailableSessions bot started
+2024-08-30 23:19:38,859 - AlertAvailableSessions - INFO - Web Driver was started
+2024-08-30 23:19:38,860 - AlertAvailableSessions - INFO - AlertAvailableSessions bot started
+2024-08-30 23:20:34,033 - AlertAvailableSessions - INFO - Web Driver was started
+2024-08-30 23:20:34,034 - AlertAvailableSessions - INFO - AlertAvailableSessions bot started
+2024-08-30 23:21:05,402 - AlertAvailableSessions - INFO - Web Driver was started
+2024-08-30 23:21:05,402 - AlertAvailableSessions - INFO - AlertAvailableSessions bot started
+2024-08-30 23:21:38,811 - AlertAvailableSessions - INFO - Web Driver was started
+2024-08-30 23:21:38,811 - AlertAvailableSessions - INFO - AlertAvailableSessions bot started
+2024-08-30 23:21:46,206 - AlertAvailableSessions - INFO - Login Successfully
+2024-08-30 23:21:46,601 - AlertAvailableSessions - INFO - Seans Secim Buton was Clicked
+2024-08-30 23:21:48,651 - AlertAvailableSessions - INFO - Pop-up was closed
+2024-08-30 23:21:50,677 - AlertAvailableSessions - INFO - Get Sessions Info
+2024-08-30 23:21:53,071 - AlertAvailableSessions - INFO - Available Sessions: []
+2024-08-30 23:21:53,071 - AlertAvailableSessions - WARNING - The new content is the same as the existing content. No file updates and e-mails did not sent.
+2024-08-30 23:21:53,071 - AlertAvailableSessions - INFO - Sent Sessions List was cleared
+2024-08-30 23:23:56,545 - AlertAvailableSessions - INFO - Web Driver was started
+2024-08-30 23:23:56,545 - AlertAvailableSessions - INFO - AlertAvailableSessions bot started
+2024-08-30 23:24:03,190 - AlertAvailableSessions - INFO - Login Successfully
+2024-08-30 23:24:03,572 - AlertAvailableSessions - INFO - Seans Secim Buton was Clicked
+2024-08-30 23:24:05,624 - AlertAvailableSessions - INFO - Pop-up was closed
+2024-08-30 23:24:07,643 - AlertAvailableSessions - INFO - Get Sessions Info
+2024-08-30 23:24:10,030 - AlertAvailableSessions - INFO - Available Sessions: []
+2024-08-30 23:24:10,030 - AlertAvailableSessions - WARNING - The new content is the same as the existing content. No file updates and e-mails did not sent.
+2024-08-30 23:24:10,031 - AlertAvailableSessions - INFO - Sent Sessions List was cleared
