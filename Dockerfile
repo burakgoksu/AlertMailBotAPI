@@ -47,5 +47,6 @@ COPY . /app
 # Gerekli Python bağımlılıklarının kurulumu
 RUN pip install --no-cache-dir -r requirements.txt
 
+EXPOSE 5000
 # Command to run the script
 CMD ["python", "app.py"]
