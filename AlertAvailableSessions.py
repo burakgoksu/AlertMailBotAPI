@@ -51,6 +51,10 @@ class AlertAvailableSessions:
         chrome_options.add_argument("--headless")
         chrome_options.add_argument("--no-sandbox")
         chrome_options.add_argument("--disable-dev-shm-usage")
+        chrome_options.add_argument("--disable-gpu")  # This is important for some versions of Chrome
+        chrome_options.add_argument("--remote-debugging-port=9222")  # This is recommended
+        chrome_options.add_argument("--window-size=1280,1024")
+        chrome_options.add_argument("--disable-software-rasterizer")
 
         # Set path to Chrome binary
         chrome_options.binary_location = "/opt/chrome/chrome-linux64/chrome"
@@ -59,7 +63,7 @@ class AlertAvailableSessions:
         chrome_service = Service(executable_path="/opt/chromedriver/chromedriver-linux64/chromedriver")
 
         # Set up driver
-        driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=chrome_options)
+        driver = webdriver.Chrome(service=chrome_service, options=chrome_options)
 
         #driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=self.chrome_option)
         try:
