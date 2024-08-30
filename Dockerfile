@@ -4,7 +4,7 @@ FROM python:3.9
 # Çalışma dizinini ayarla
 WORKDIR /app
 
-# Gereksinimleri kopyala ve yükle
+# Gereksinimleri kopyala ve yükl
 COPY requirements.txt requirements.txt
 RUN pip install -r requirements.txt
 
