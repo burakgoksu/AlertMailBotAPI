@@ -61,7 +61,6 @@ def start_available_sessions_boy():
             link2="https://online.spor.istanbul/uyespor",
             txt_file1="UmraniyeCakmakYuzmeHavuzuSeans.txt",
             txt_file2="UygunSeanslar.txt",
-            headless=False,
             sender_email="gogsub58365@gmail.com",
             sender_password="hnma axon amcw sumr",
             receiver_email="gogsub58365@gmail.com"
