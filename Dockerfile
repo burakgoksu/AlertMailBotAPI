@@ -55,8 +55,10 @@ RUN rm /tmp/chromedriver-linux64.zip
 WORKDIR /app
 COPY . /app
 
+RUN apt-get install -y xvfb
+
 # Gerekli Python bağımlılıklarının kurulumu
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Command to run the script
-CMD ["gunicorn", "--timeout", "120", "--bind", "0.0.0.0:$PORT", "app:app"]
+CMD ["python", "app.py"]
