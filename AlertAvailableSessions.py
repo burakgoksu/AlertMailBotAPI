@@ -48,11 +48,13 @@ class AlertAvailableSessions:
 
         # Setup Chrome options
         chrome_options = Options()
-        #chrome_options.add_argument("--headless")
+        chrome_options.add_argument("--headless")
         chrome_options.add_argument("--no-sandbox")
         chrome_options.add_argument("--disable-dev-shm-usage")
         chrome_options.add_argument("--disable-gpu")  # This is important for some versions of Chrome
         chrome_options.add_argument("--remote-debugging-port=9222")  # This is recommended
+        chrome_options.add_argument("--window-size=1280,1024")
+        chrome_options.add_argument("--disable-software-rasterizer")
 
         # Set path to Chrome binary
         chrome_options.binary_location = "/opt/chrome/chrome-linux64/chrome"
