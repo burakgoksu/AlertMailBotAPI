@@ -426,3 +426,4 @@ class AlertAvailableSessions:
     def stop(self):
         self.logger.info('AlertAvailableSessions bot stopped')
         self._running = False
+
