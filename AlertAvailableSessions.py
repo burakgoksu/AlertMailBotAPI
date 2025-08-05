@@ -44,6 +44,7 @@ class AlertAvailableSessions:
             "profile.password_manager_enabled": False,
             "profile.password_manager_leak_detection":False
         })
+        self.chrome_option.binary_location = "/usr/bin/google-chrome"
         self.chrome_option.add_argument("user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36")
         self.link1 = link1
         self.link2 = link2
@@ -65,11 +66,6 @@ class AlertAvailableSessions:
         self.from_number = from_number
         self.polling_time = pooling_time
         self.lock = threading.Lock()
-
-
-    def sanitize_filename(self, name):
-        name = name.replace(" ", "_")  # boşlukları _ yap
-        return re.sub(r'[<>:"/\\|?*]', '_', name)
 
 
     def GetSessionInfo(self, utc_time=None):
