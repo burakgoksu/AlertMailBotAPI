@@ -69,4 +69,4 @@ if __name__ == '__main__':
 
     #print(current_datetime)
     twilio = Twilio("ACd5050cdc2c5442fc228499850be5d42d","f81a4085f750a652a5512a8ced187933")
-    twilio.getSMSCode("2025-08-03 19:11:01","+905075502378")
+    twilio.getSMSCode("2025-08-03 19:11:01","+90")

@@ -120,9 +120,26 @@ def stop_available_sessions_bot():
     else:
         return f'No running bot for {bot_key}'
 
+
+@app.route('/stop_all_bot', methods=['GET'])
+def stop_all_bot():
+    if not bool(bots):
+        return f'No running bot.'
+    else:
+        bot_keys = list(bots.keys())
+
+        for bot in bot_keys:
+            bots[bot].stop()
+            threads[bot].join(timeout=5)
+            del bots[bot]
+            del threads[bot]
+            app.logger.info(f"Bot stopped for {bot}")
+
+        return f'All bots stopped successfully: \n{bot}'
+
 @app.route('/list_active_bot', methods=['GET'])
 def list_active_bot():
-    if bool(bots) == False:
+    if not bool(bots):
         return "There is no active bot"
 
     else:

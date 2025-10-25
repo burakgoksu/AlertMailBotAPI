@@ -1,138 +1,61 @@
-2025-08-04 02:37:18,514 - app - INFO - AlertAvailableSessions bot started
-2025-08-04 02:37:50,489 - app - INFO - AlertAvailableSessions bot started
-2025-08-04 02:39:55,696 - app - INFO - AlertAvailableSessions bot started
-2025-08-04 02:41:23,883 - app - INFO - AlertAvailableSessions bot started
-2025-08-04 02:44:39,437 - app - INFO - AlertAvailableSessions bot started
-2025-08-04 02:48:29,419 - app - INFO - AlertAvailableSessions bot started
-2025-08-04 02:50:55,792 - app - INFO - AlertAvailableSessions bot started
-2025-08-04 02:55:14,567 - app - INFO - AlertAvailableSessions bot started
-2025-08-04 02:55:49,298 - app - INFO - AlertAvailableSessions bot started
-2025-08-04 02:56:36,734 - app - INFO - AlertAvailableSessions bot started
-2025-08-04 02:58:41,056 - app - INFO - AlertAvailableSessions bot started
-2025-08-04 03:00:09,771 - app - INFO - AlertAvailableSessions bot started
-2025-08-04 14:27:25,396 - app - INFO - AlertAvailableSessions bot started
-2025-08-04 14:33:34,785 - app - INFO - AlertAvailableSessions bot started
-2025-08-04 14:35:45,894 - app - INFO - AlertAvailableSessions bot started
-2025-08-04 14:36:37,972 - app - INFO - AlertAvailableSessions bot started
-2025-08-04 14:39:45,564 - app - INFO - AlertAvailableSessions bot started
-2025-08-04 21:10:33,931 - app - INFO - Bot started for MALTEPE SAHİL SPOR TESİSİ_TENİS
-2025-08-04 21:13:24,370 - app - INFO - Bot started for MALTEPE SAHİL SPOR TESİSİ_TENİS
-2025-08-04 21:13:43,272 - app - INFO - Bot started for ÜMRANİYE ÇAKMAK KAPALI YÜZME HAVUZU_YÜZME
-2025-08-04 21:15:54,876 - app - INFO - Bot stopped for MALTEPE SAHİL SPOR TESİSİ_TENİS
-2025-08-04 21:23:34,940 - app - INFO - Bot started for MALTEPE SAHİL SPOR TESİSİ_TENİS_06.08.2025_20:00 - 21:00
-2025-08-04 21:24:18,567 - app - INFO - Bot started for MALTEPE SAHİL SPOR TESİSİ_TENİS_06.08.2025_20:00 - 21:00
-2025-08-04 21:27:06,213 - app - ERROR - Exception on /start_available_sessions_bot [GET]
-Traceback (most recent call last):
-  File "D:\Software\ANN\AlertMailBotAPI\venv\lib\site-packages\flask\app.py", line 1473, in wsgi_app
-    response = self.full_dispatch_request()
-  File "D:\Software\ANN\AlertMailBotAPI\venv\lib\site-packages\flask\app.py", line 882, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "D:\Software\ANN\AlertMailBotAPI\venv\lib\site-packages\flask\app.py", line 880, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "D:\Software\ANN\AlertMailBotAPI\venv\lib\site-packages\flask\app.py", line 865, in dispatch_request
-    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
-  File "D:\Software\ANN\AlertMailBotAPI\app.py", line 75, in start_available_sessions_bot
-    txt_file1=sanitize_filename(f"{request.args.get('tesis')}_{request.args.get('brans')}_{request.args.get('tarih')}_{request.args.get('saat')}_Seans.txt"),
-  File "D:\Software\ANN\AlertMailBotAPI\app.py", line 65, in sanitize_filename
-    return re.sub(r'[<>:"/\\|?*]', '_', name)
-AttributeError: type object 'typing.re' has no attribute 'sub'
-2025-08-04 21:29:41,046 - app - ERROR - Exception on /start_available_sessions_bot [GET]
-Traceback (most recent call last):
-  File "D:\Software\ANN\AlertMailBotAPI\venv\lib\site-packages\flask\app.py", line 1473, in wsgi_app
-    response = self.full_dispatch_request()
-  File "D:\Software\ANN\AlertMailBotAPI\venv\lib\site-packages\flask\app.py", line 882, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "D:\Software\ANN\AlertMailBotAPI\venv\lib\site-packages\flask\app.py", line 880, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "D:\Software\ANN\AlertMailBotAPI\venv\lib\site-packages\flask\app.py", line 865, in dispatch_request
-    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
-  File "D:\Software\ANN\AlertMailBotAPI\app.py", line 73, in start_available_sessions_bot
-    txt_file1=AlertAvailableSessions.sanitize_filename(f"{request.args.get('tesis')}_{request.args.get('brans')}_{request.args.get('tarih')}_{request.args.get('saat')}_Seans.txt"),
-TypeError: AlertAvailableSessions.sanitize_filename() missing 1 required positional argument: 'name'
-2025-08-04 21:31:06,278 - app - ERROR - Exception on /start_available_sessions_bot [GET]
-Traceback (most recent call last):
-  File "D:\Software\ANN\AlertMailBotAPI\venv\lib\site-packages\flask\app.py", line 1473, in wsgi_app
-    response = self.full_dispatch_request()
-  File "D:\Software\ANN\AlertMailBotAPI\venv\lib\site-packages\flask\app.py", line 882, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "D:\Software\ANN\AlertMailBotAPI\venv\lib\site-packages\flask\app.py", line 880, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "D:\Software\ANN\AlertMailBotAPI\venv\lib\site-packages\flask\app.py", line 865, in dispatch_request
-    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
-  File "D:\Software\ANN\AlertMailBotAPI\app.py", line 77, in start_available_sessions_bot
-    txt_file1=sanitize_filename(f"{request.args.get('tesis')}_{request.args.get('brans')}_{request.args.get('tarih')}_{request.args.get('saat')}_Seans.txt"),
-TypeError: sanitize_filename() missing 1 required positional argument: 'name'
-2025-08-04 21:31:20,152 - app - INFO - Bot started for MALTEPE SAHİL SPOR TESİSİ_TENİS_06.08.2025_20:00 - 21:00
-2025-08-04 21:34:29,472 - app - INFO - Bot started for MALTEPE SAHİL SPOR TESİSİ_TENİS_06.08.2025_20:00 - 21:00
-2025-08-04 21:34:54,220 - app - INFO - Bot started for ÜMRANİYE ÇAKMAK KAPALI YÜZME HAVUZU_YÜZME_06.08.2025_20:00 - 21:00
-2025-08-04 21:35:15,868 - app - INFO - Bot started for ÜMRANİYE ÇAKMAK KAPALI YÜZME HAVUZU_YÜZME_06.08.2025_20:00 - 21:00
-2025-08-04 21:35:34,147 - app - INFO - Bot started for MALTEPE SAHİL SPOR TESİSİ_TENİS_06.08.2025_20:00 - 21:00
-2025-08-04 21:39:54,192 - app - INFO - Bot started for MALTEPE SAHİL SPOR TESİSİ_TENİS_06.08.2025_20:00 - 21:00
-2025-08-04 21:40:20,532 - app - INFO - Bot started for ÜMRANİYE ÇAKMAK KAPALI YÜZME HAVUZU_YÜZME_06.08.2025_20:00 - 21:00
-2025-08-04 21:42:37,585 - app - INFO - Bot stopped for MALTEPE SAHİL SPOR TESİSİ_TENİS_06.08.2025_20:00 - 21:00
-2025-08-04 22:13:38,861 - app - INFO - Bot started for MALTEPE SAHİL SPOR TESİSİ_TENİS_05.08.2025_21:00 - 22:00
-2025-08-04 22:15:59,232 - app - INFO - Bot started for MALTEPE SAHİL SPOR TESİSİ_TENİS_05.08.2025_22:00 - 23:00
-2025-08-04 22:19:41,388 - app - INFO - Bot started for MALTEPE SAHİL SPOR TESİSİ_TENİS_06.08.2025_20:00 - 21:00
-2025-08-04 22:29:27,764 - app - INFO - Bot started for MALTEPE SAHİL SPOR TESİSİ_TENİS_06.08.2025_20:00 - 21:00
-2025-08-04 22:29:53,154 - app - INFO - Bot started for ÜMRANİYE ÇAKMAK KAPALI YÜZME HAVUZU_YÜZME_06.08.2025_20:00 - 21:00
-2025-08-04 22:49:00,459 - app - ERROR - Exception on /list_active_alert [GET]
-Traceback (most recent call last):
-  File "D:\Software\ANN\AlertMailBotAPI\venv\lib\site-packages\flask\app.py", line 1473, in wsgi_app
-    response = self.full_dispatch_request()
-  File "D:\Software\ANN\AlertMailBotAPI\venv\lib\site-packages\flask\app.py", line 883, in full_dispatch_request
-    return self.finalize_request(rv)
-  File "D:\Software\ANN\AlertMailBotAPI\venv\lib\site-packages\flask\app.py", line 902, in finalize_request
-    response = self.make_response(rv)
-  File "D:\Software\ANN\AlertMailBotAPI\venv\lib\site-packages\flask\app.py", line 1174, in make_response
-    raise TypeError(
-TypeError: The view function for 'list_active_alert' did not return a valid response. The function either returned None or ended without a return statement.
-2025-08-04 22:49:32,107 - app - INFO - Bot started for MALTEPE SAHİL SPOR TESİSİ_TENİS_06.08.2025_20:00 - 21:00
-2025-08-04 22:55:58,698 - app - INFO - Bot started for MALTEPE SAHİL SPOR TESİSİ_TENİS_06.08.2025_20:00 - 21:00
-2025-08-04 23:02:06,176 - app - INFO - Bot started for MALTEPE SAHİL SPOR TESİSİ_TENİS_06.08.2025_20:00 - 21:00
-2025-08-04 23:02:17,188 - app - INFO - Bot started for ÜMRANİYE ÇAKMAK KAPALI YÜZME HAVUZU_YÜZME_06.08.2025_20:00 - 21:00
-2025-08-04 23:04:41,277 - app - INFO - Bot started for MALTEPE SAHİL SPOR TESİSİ_TENİS_06.08.2025_20:00 - 21:00
-2025-08-04 23:04:48,984 - app - INFO - Bot started for ÜMRANİYE ÇAKMAK KAPALI YÜZME HAVUZU_YÜZME_06.08.2025_20:00 - 21:00
-2025-08-04 23:05:29,499 - app - INFO - Bot started for MALTEPE SAHİL SPOR TESİSİ_TENİS_06.08.2025_20:00 - 21:00
-2025-08-04 23:06:38,985 - app - INFO - Bot started for MALTEPE SAHİL SPOR TESİSİ_TENİS_06.08.2025_20:00 - 21:00
-2025-08-04 23:06:47,557 - app - INFO - Bot started for ÜMRANİYE ÇAKMAK KAPALI YÜZME HAVUZU_YÜZME_06.08.2025_20:00 - 21:00
-2025-08-04 23:25:48,129 - app - INFO - Bot started for MALTEPE SAHİL SPOR TESİSİ_TENİS_06.08.2025_20:00 - 21:00
-2025-08-04 23:25:58,941 - app - INFO - Active bot is 1 : 
- MALTEPE SAHİL SPOR TESİSİ_TENİS_06.08.2025_20:00 - 21:00
-2025-08-04 23:27:27,621 - app - INFO - Method: show_available_sessions_logs, log_file_path: AlertAvailableSessions.log
-2025-08-04 23:27:28,963 - app - INFO - Method: show_available_sessions_logs, log_file_path: AlertAvailableSessions.log
-2025-08-04 23:27:36,850 - app - INFO - Method: show_available_sessions_logs, log_file_path: AlertAvailableSessions.log
-2025-08-04 23:28:55,904 - app - INFO - Method: alert_bot_logs, log_file_path: AlertBot.log
-2025-08-04 23:29:30,133 - app - INFO - Method: alert_bot_logs, log_file_path: AlertBot.log
-2025-08-04 23:29:37,822 - app - INFO - Bot started for MALTEPE SAHİL SPOR TESİSİ_TENİS_06.08.2025_20:00 - 21:00
-2025-08-04 23:29:44,905 - app - INFO - Bot stopped for MALTEPE SAHİL SPOR TESİSİ_TENİS_06.08.2025_20:00 - 21:00
-2025-08-04 23:29:48,280 - app - INFO - Method: alert_bot_logs, log_file_path: AlertBot.log
-2025-08-04 23:31:03,915 - app - INFO - Bot started for MALTEPE SAHİL SPOR TESİSİ_TENİS_06.08.2025_20:00 - 21:00
-2025-08-04 23:31:27,290 - app - INFO - Bot stopped for MALTEPE SAHİL SPOR TESİSİ_TENİS_06.08.2025_20:00 - 21:00
-2025-08-04 23:32:00,643 - app - INFO - Bot started for MALTEPE SAHİL SPOR TESİSİ_TENİS_06.08.2025_20:00 - 21:00
-2025-08-04 23:32:03,107 - app - INFO - Active bot is 1 : 
- MALTEPE SAHİL SPOR TESİSİ_TENİS_06.08.2025_20:00 - 21:00
-2025-08-04 23:32:44,325 - app - INFO - Bot stopped for MALTEPE SAHİL SPOR TESİSİ_TENİS_06.08.2025_20:00 - 21:00
-2025-08-04 23:42:33,387 - app - INFO - Bot started for MALTEPE SAHİL SPOR TESİSİ_TENİS_07.08.2025_21:00 - 22:00
-2025-08-04 23:43:24,123 - app - INFO - Bot started for MALTEPE SAHİL SPOR TESİSİ_TENİS_06.08.2025_20:00 - 21:00
-2025-08-04 23:43:28,880 - app - INFO - Method: alert_bot_logs, log_file_path: AlertBot.log
-2025-08-04 23:43:50,888 - app - INFO - Method: alert_bot_logs, log_file_path: AlertBot.log
-2025-08-04 23:43:54,414 - app - INFO - Method: available_sessions_logs, log_file_path: AlertAvailableSessions.log
-2025-08-04 23:44:41,611 - app - INFO - Bot started for MALTEPE SAHİL SPOR TESİSİ_TENİS_07.08.2025_21:00 - 22:00
-2025-08-04 23:45:08,987 - app - INFO - Bot started for MALTEPE SAHİL SPOR TESİSİ_TENİS_06.08.2025_20:00 - 21:00
-2025-08-04 23:45:52,328 - app - INFO - Active bot is 2 : 
- MALTEPE SAHİL SPOR TESİSİ_TENİS_07.08.2025_21:00 - 22:00
-MALTEPE SAHİL SPOR TESİSİ_TENİS_06.08.2025_20:00 - 21:00
-2025-08-04 23:46:05,096 - app - INFO - Method: alert_bot_logs, log_file_path: AlertBot.log
-2025-08-04 23:46:17,631 - app - INFO - Method: available_sessions_logs, log_file_path: AlertAvailableSessions.log
-2025-08-05 00:46:56,721 - app - INFO - Method: available_sessions_logs, log_file_path: AlertAvailableSessions.log
-2025-08-05 00:59:44,409 - app - INFO - Bot started for MALTEPE SAHİL SPOR TESİSİ_TENİS_07.08.2025_21:00 - 22:00
-2025-08-05 01:00:12,051 - app - INFO - Bot started for MALTEPE SAHİL SPOR TESİSİ_TENİS_06.08.2025_20:00 - 21:00
-2025-08-05 01:08:14,920 - app - INFO - Bot started for MALTEPE SAHİL SPOR TESİSİ_TENİS_07.08.2025_21:00 - 22:00
-2025-08-05 01:08:44,419 - app - INFO - Bot started for MALTEPE SAHİL SPOR TESİSİ_TENİS_06.08.2025_20:00 - 21:00
-2025-08-05 01:19:25,390 - app - INFO - Active bot is 2 : 
- MALTEPE SAHİL SPOR TESİSİ_TENİS_07.08.2025_21:00 - 22:00
-MALTEPE SAHİL SPOR TESİSİ_TENİS_06.08.2025_20:00 - 21:00
-2025-08-05 19:55:43,445 - app - INFO - Method: available_sessions_logs, log_file_path: AlertAvailableSessions.log
-2025-08-05 19:56:12,993 - app - INFO - Bot stopped for MALTEPE SAHİL SPOR TESİSİ_TENİS_06.08.2025_20:00 - 21:00
-2025-08-05 19:56:16,217 - app - INFO - Active bot is 1 : 
- MALTEPE SAHİL SPOR TESİSİ_TENİS_07.08.2025_21:00 - 22:00
+2025-08-10 20:49:45,013 - app - INFO - Bot started for MALTEPE SAHİL SPOR TESİSİ_TENİS_13.08.2025_20:00 - 21:00
+2025-08-10 20:50:20,040 - app - INFO - Bot started for MALTEPE SAHİL SPOR TESİSİ_TENİS_13.08.2025_20:00 - 21:00
+2025-08-11 00:12:41,207 - app - INFO - Bot started for MALTEPE SAHİL SPOR TESİSİ_TENİS_13.08.2025_20:00 - 21:00
+2025-08-11 00:13:40,291 - app - INFO - Bot started for MALTEPE SAHİL SPOR TESİSİ_TENİS_13.08.2025_20:00 - 21:00
+2025-08-11 20:44:55,633 - app - INFO - Method: available_sessions_logs, log_file_path: AlertAvailableSessions.log
+2025-08-11 20:45:27,245 - app - INFO - Bot started for MALTEPE SAHİL SPOR TESİSİ_TENİS_13.08.2025_20:00 - 21:00
+2025-08-17 00:18:32,109 - app - INFO - Bot started for MALTEPE SAHİL SPOR TESİSİ_TENİS_19.08.2025_21:00 - 22:00
+2025-08-17 00:19:09,810 - app - INFO - Bot started for MALTEPE SAHİL SPOR TESİSİ_TENİS_19.08.2025_21:00 - 22:00
+2025-08-17 00:20:03,218 - app - INFO - Bot started for MALTEPE SAHİL SPOR TESİSİ_TENİS_19.08.2025_21:00 - 22:00
+2025-08-17 00:20:53,530 - app - INFO - Bot started for MALTEPE SAHİL SPOR TESİSİ_TENİS_19.08.2025_21:00 - 22:00
+2025-08-17 02:30:21,062 - app - INFO - Active bot is 1 : 
+ MALTEPE SAHİL SPOR TESİSİ_TENİS_19.08.2025_21:00 - 22:00
+2025-08-17 02:30:27,540 - app - INFO - Method: available_sessions_logs, log_file_path: AlertAvailableSessions.log
+2025-08-17 19:48:24,316 - app - INFO - Bot stopped for MALTEPE SAHİL SPOR TESİSİ_TENİS_19.08.2025_21:00 - 22:00
+2025-08-17 20:04:25,963 - app - INFO - Bot started for MALTEPE SAHİL SPOR TESİSİ_TENİS_19.08.2025_21:00 - 22:00
+2025-08-19 21:18:50,318 - app - INFO - Bot started for MALTEPE SAHİL SPOR TESİSİ_TENİS_21.08.2025_21:00 - 22:00
+2025-08-19 21:19:42,857 - app - INFO - Bot stopped for MALTEPE SAHİL SPOR TESİSİ_TENİS_21.08.2025_21:00 - 22:00
+2025-08-19 21:19:44,658 - app - INFO - Bot started for MALTEPE SAHİL SPOR TESİSİ_TENİS_21.08.2025_21:00 - 22:00
+2025-08-19 21:20:28,139 - app - INFO - Bot stopped for MALTEPE SAHİL SPOR TESİSİ_TENİS_21.08.2025_21:00 - 22:00
+2025-08-19 21:20:30,098 - app - INFO - Bot started for MALTEPE SAHİL SPOR TESİSİ_TENİS_21.08.2025_21:00 - 22:00
+2025-08-19 21:21:13,432 - app - INFO - Bot started for MALTEPE SAHİL SPOR TESİSİ_TENİS_21.08.2025_21:00 - 22:00
+2025-08-19 21:21:50,280 - app - INFO - Bot started for MALTEPE SAHİL SPOR TESİSİ_TENİS_21.08.2025_21:00 - 22:00
+2025-08-19 21:22:26,492 - app - INFO - Bot started for MALTEPE SAHİL SPOR TESİSİ_TENİS_21.08.2025_21:00 - 22:00
+2025-08-20 14:28:12,632 - app - INFO - Method: available_sessions_logs, log_file_path: AlertAvailableSessions.log
+2025-08-20 22:12:52,865 - app - INFO - Method: available_sessions_logs, log_file_path: AlertAvailableSessions.log
+2025-08-23 21:04:52,447 - app - INFO - Bot started for MALTEPE SAHİL SPOR TESİSİ_TENİS_21.08.2025_21:00 - 22:00
+2025-08-23 21:06:52,470 - app - INFO - Bot stopped for MALTEPE SAHİL SPOR TESİSİ_TENİS_21.08.2025_21:00 - 22:00
+2025-08-23 21:07:13,325 - app - INFO - Bot started for MALTEPE SAHİL SPOR TESİSİ_TENİS_26.08.2025_21:00 - 22:00
+2025-08-23 21:07:53,881 - app - INFO - Bot started for MALTEPE SAHİL SPOR TESİSİ_TENİS_26.08.2025_21:00 - 22:00
+2025-08-24 14:21:38,652 - app - INFO - Bot started for MALTEPE SAHİL SPOR TESİSİ_TENİS_26.08.2025_21:00 - 22:00
+2025-08-24 20:04:59,411 - app - INFO - Bot started for MALTEPE SAHİL SPOR TESİSİ_TENİS_26.08.2025_21:00 - 22:00
+2025-08-25 01:04:19,611 - app - INFO - Bot started for MALTEPE SAHİL SPOR TESİSİ_TENİS_26.08.2025_21:00 - 22:00
+2025-08-25 20:34:45,793 - app - INFO - Bot started for MALTEPE SAHİL SPOR TESİSİ_TENİS_26.08.2025_21:00 - 22:00
+2025-08-25 21:15:07,127 - app - INFO - Bot started for MALTEPE SAHİL SPOR TESİSİ_TENİS_28.08.2025_21:00 - 22:00
+2025-08-25 21:15:45,462 - app - INFO - Bot stopped for MALTEPE SAHİL SPOR TESİSİ_TENİS_28.08.2025_21:00 - 22:00
+2025-08-25 21:15:47,353 - app - INFO - Bot started for MALTEPE SAHİL SPOR TESİSİ_TENİS_28.08.2025_21:00 - 22:00
+2025-08-25 21:16:34,926 - app - INFO - Bot started for MALTEPE SAHİL SPOR TESİSİ_TENİS_28.08.2025_21:00 - 22:00
+2025-08-26 11:37:43,574 - app - INFO - Method: available_sessions_logs, log_file_path: AlertAvailableSessions.log
+2025-08-26 20:30:59,616 - app - INFO - Bot started for MALTEPE SAHİL SPOR TESİSİ_TENİS_28.08.2025_21:00 - 22:00
+2025-08-27 00:57:45,707 - app - INFO - Bot started for MALTEPE SAHİL SPOR TESİSİ_TENİS_28.08.2025_21:00 - 22:00
+2025-08-27 13:50:20,830 - app - INFO - Bot started for MALTEPE SAHİL SPOR TESİSİ_TENİS_28.08.2025_21:00 - 22:00
+2025-08-28 15:10:42,261 - app - INFO - Bot started for MALTEPE SAHİL SPOR TESİSİ_TENİS_28.08.2025_21:00 - 22:00
+2025-09-01 13:58:10,712 - app - INFO - Bot started for MALTEPE SAHİL SPOR TESİSİ_TENİS_02.09.2025_21:00 - 22:00
+2025-09-01 13:59:01,062 - app - INFO - Bot started for MALTEPE SAHİL SPOR TESİSİ_TENİS_02.09.2025_21:00 - 22:00
+2025-09-01 13:59:43,390 - app - INFO - Bot started for MALTEPE SAHİL SPOR TESİSİ_TENİS_02.09.2025_21:00 - 22:00
+2025-09-01 14:00:52,014 - app - INFO - Bot started for MALTEPE SAHİL SPOR TESİSİ_TENİS_02.09.2025_21:00 - 22:00
+2025-09-01 14:01:25,052 - app - INFO - Bot started for MALTEPE SAHİL SPOR TESİSİ_TENİS_02.09.2025_21:00 - 22:00
+2025-09-01 14:19:51,159 - app - INFO - Bot started for MALTEPE SAHİL SPOR TESİSİ_TENİS_02.09.2025_21:00 - 22:00
+2025-09-01 18:11:09,787 - app - INFO - Bot started for MALTEPE SAHİL SPOR TESİSİ_TENİS_02.09.2025_21:00 - 22:00
+2025-09-01 21:56:22,659 - app - INFO - Bot started for MALTEPE SAHİL SPOR TESİSİ_TENİS_02.09.2025_21:00 - 22:00
+2025-09-01 21:57:07,141 - app - INFO - Bot started for MALTEPE SAHİL SPOR TESİSİ_TENİS_02.09.2025_21:00 - 22:00
+2025-09-08 21:06:32,328 - app - INFO - Bot started for MALTEPE SAHİL SPOR TESİSİ_TENİS_11.09.2025_21:00 - 22:00
+2025-09-08 21:07:15,223 - app - INFO - Bot started for MALTEPE SAHİL SPOR TESİSİ_TENİS_11.09.2025_21:00 - 22:00
+2025-09-08 21:08:05,112 - app - INFO - Bot started for MALTEPE SAHİL SPOR TESİSİ_TENİS_11.09.2025_21:00 - 22:00
+2025-09-08 21:11:25,350 - app - INFO - Bot started for MALTEPE SAHİL SPOR TESİSİ_TENİS_11.09.2025_21:00 - 22:00
+2025-09-09 01:12:52,754 - app - INFO - Method: available_sessions_logs, log_file_path: AlertAvailableSessions.log
+2025-09-09 01:13:52,931 - app - INFO - Bot stopped for MALTEPE SAHİL SPOR TESİSİ_TENİS_11.09.2025_21:00 - 22:00
+2025-09-09 01:13:56,240 - app - INFO - Bot started for MALTEPE SAHİL SPOR TESİSİ_TENİS_11.09.2025_21:00 - 22:00
+2025-09-09 01:14:48,326 - app - INFO - Bot started for MALTEPE SAHİL SPOR TESİSİ_TENİS_11.09.2025_21:00 - 22:00
+2025-09-09 21:36:10,818 - app - INFO - Bot started for MALTEPE SAHİL SPOR TESİSİ_TENİS_11.09.2025_21:00 - 22:00
+2025-09-10 15:26:19,767 - app - INFO - Bot started for MALTEPE SAHİL SPOR TESİSİ_TENİS_11.09.2025_21:00 - 22:00
