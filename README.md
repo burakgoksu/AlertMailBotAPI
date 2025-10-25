@@ -1,1 +1,1 @@
-Alert ot
+Alert bot
